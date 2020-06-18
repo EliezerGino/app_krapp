@@ -10,7 +10,7 @@ class Label extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       texto,
-      style: TextStyle(
+      style: TextStyle( 
           fontSize: 16,
           color: Colors.white,
           fontWeight: FontWeight.w400,

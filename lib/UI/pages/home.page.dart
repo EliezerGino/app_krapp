@@ -2,11 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:krapp/UI/pages/history.app.dart';
 
 class HomeApp extends StatefulWidget {
+  final String text;
+  HomeApp({Key key, @required this.text}) : super(key: key);
+
   @override
   _HomeAppState createState() => _HomeAppState();
 }
 
 class _HomeAppState extends State<HomeApp> {
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +39,7 @@ class _HomeAppState extends State<HomeApp> {
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                                text: 'Kapuã',
+                                text: text,
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20.0,

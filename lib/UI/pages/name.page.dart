@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-
 import 'home.page.dart';
 
 class MyHomePage extends StatefulWidget {
+  
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+ 
 
  Decoration bgColor = const BoxDecoration(
     gradient: LinearGradient(
@@ -19,6 +20,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ],
     ),
   );
+  
+     TextEditingController textFieldController = TextEditingController();
+
+  
+   
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Padding(
               padding: EdgeInsets.only(left: 30, right: 30),
               child: TextFormField(
-              
+                controller: textFieldController,
                 decoration: InputDecoration(
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Color(0xFFD9D9D9))
@@ -104,10 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => HomeApp()),
-                      );
+                      _sendDataToSecondScreen(context);
                     },
                 ),
               )   
@@ -117,4 +120,13 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+  void _sendDataToSecondScreen(BuildContext context) {
+    String textToSend = textFieldController.text;
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => HomeApp(text: textToSend,),
+        ));
+  }
 }
+
