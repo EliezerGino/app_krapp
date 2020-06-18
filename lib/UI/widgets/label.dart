@@ -9,7 +9,7 @@ class Label extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      'Esse é  Krapp.\nEle vive na boca do Rôxwá,\nmas nem sempre ele foi assim.',
+      texto,
       style: TextStyle(
           fontSize: 14,
           color: Colors.white,
