@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:krapp/UI/widgets/button.dart';
 import 'package:krapp/UI/widgets/label.dart';
+import 'package:krapp/UI/widgets/picture.dart';
 
 import 'congratulations.page.dart';
 
@@ -25,13 +26,13 @@ class _HistoryState extends State<History> {
 
   final _historia = const [
     {
-      "SrcImge": "assets/Krapp",
-      "Heading": "Esse é  Krapp. Ele vive na boca do Rôxwá, mas nem sempre ele foi assim.",
+      "SrcImge": "assets/Krapp.png",
+      "Heading": "Esse é  Krapp.\nEle vive na boca do Rôxwá,\nmas nem sempre ele foi assim.",
     },
     {
-      "SrcImge": "assets/Krapp",
-      "Heading":"Quando pequeno era um dente de leite, menor e mais branco assim como seus 19 irmãos.",
-    }
+      "SrcImge": "assets/KrappJr.png",
+      "Heading":"Quando pequeno era um dente\nde leite, menor e mais branco assim\ncomo seus 19 irmãos.",
+    },
   ];
 
   bool get textSelect {
@@ -61,15 +62,7 @@ class _HistoryState extends State<History> {
                         decoration: bgColor,
                         child: Column(
                           children: <Widget>[
-                            Container(
-                              height: 270,
-                              padding: EdgeInsets.only(top: 100),
-                              child: Image(
-                                image: AssetImage(
-                                  'assets/Krapp.png',
-                                ),
-                              ),
-                            ),
+                            Picture(_historia[_selectText]["SrcImge"]),
                             SizedBox(
                               height: 50,
                             ),
@@ -87,4 +80,6 @@ class _HistoryState extends State<History> {
     );
   }
 }
+
+
 

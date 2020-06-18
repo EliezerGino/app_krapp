@@ -17,15 +17,16 @@ class ButtonNext extends StatelessWidget {
         padding: EdgeInsets.only(left: 30, right: 30),
         child: Container(
           height: 60,
+          width: 128 ,
           decoration: BoxDecoration(
-              color: Color(0xFF6347FB),
-              borderRadius: BorderRadius.circular(4)),
+              color: Color(0xFFFFFFFF),
+              borderRadius: BorderRadius.circular(8)),
           child: FlatButton(
             child: Text(
               texto,
               style: TextStyle(
                   fontSize: 14,
-                  color: Colors.white,
+                  color: Colors.black87,
                   fontWeight: FontWeight.w600,
                   fontFamily: "Poppins"),
             ),

@@ -11,7 +11,7 @@ class Label extends StatelessWidget {
     return Text(
       texto,
       style: TextStyle(
-          fontSize: 14,
+          fontSize: 16,
           color: Colors.white,
           fontWeight: FontWeight.w400,
           fontFamily: "Poppins"),

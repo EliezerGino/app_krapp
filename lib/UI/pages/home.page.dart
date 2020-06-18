@@ -89,7 +89,7 @@ class _HomeAppState extends State<HomeApp> {
             Container(
               padding: EdgeInsets.only(left: 95, right: 95),
               child: Text(
-                'Conheça Krapp \nAutor - Anonimo, Ano 2020',
+                'Conheça Krapp \nAutor: Anonimo, Ano 2020',
                 style: TextStyle(
                   fontSize: 12,
                   fontFamily: "Poppins",
