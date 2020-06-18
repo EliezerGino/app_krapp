@@ -59,7 +59,10 @@ class _HomeAppState extends State<HomeApp> {
               color: Colors.white,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 30, right: 30,),
+              padding: EdgeInsets.only(
+                left: 30,
+                right: 30,
+              ),
               child: Text(
                 'Minhas Historias',
                 style: TextStyle(
@@ -68,17 +71,32 @@ class _HomeAppState extends State<HomeApp> {
                     fontWeight: FontWeight.w600),
               ),
             ),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => History()),
-                );
-              },
-              child: Image(
-                image: AssetImage('assets/livro.png'),
+            Container(
+              padding: EdgeInsets.only(left: 80, right: 80),
+              alignment: Alignment.center,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => History()),
+                  );
+                },
+                child: Image(
+                  image: AssetImage('assets/livro.png'),
+                ),
               ),
             ),
+            Container(
+              padding: EdgeInsets.only(left: 95, right: 95),
+              child: Text(
+                'Conheça Krapp \nAutor - Anonimo, Ano 2020',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontFamily: "Poppins",
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            )
           ],
         ),
       ),
