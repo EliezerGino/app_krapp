@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Padding(
               padding: EdgeInsets.only(left: 30, right: 30),
               child: Text(
-                'Antes de iniciarmos, qual é o seu nome?',
+                'Qual é o seu nome?',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,

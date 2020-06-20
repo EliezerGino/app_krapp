@@ -3,7 +3,7 @@ import 'package:krapp/UI/pages/history.app.dart';
 
 class HomeApp extends StatefulWidget {
   final String text;
-  HomeApp({Key key, @required this.text}) : super(key: key);
+  HomeApp({this.text});
 
   @override
   _HomeAppState createState() => _HomeAppState();
@@ -27,6 +27,7 @@ class _HomeAppState extends State<HomeApp> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
+                      
                       Center(
                           child: RichText(
                         text: TextSpan(
@@ -39,7 +40,7 @@ class _HomeAppState extends State<HomeApp> {
                           ),
                           children: <TextSpan>[
                             TextSpan(
-                                text: text,
+                                text: widget.text,
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20.0,
@@ -88,7 +89,7 @@ class _HomeAppState extends State<HomeApp> {
                   );
                 },
                 child: Image(
-                  image: AssetImage('assets/livro.png'),
+                  image: AssetImage('assets/KrappBook.png'),
                 ),
               ),
             ),

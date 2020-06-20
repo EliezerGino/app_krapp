@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: EdgeInsets.only(left: 30, right: 30),
               child: Text(
-                'Antes de iniciarmos \n escolha um idioma\n.',
+                'Antes de iniciarmos \n escolha.',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontFamily: "Poppins"),
               ),
@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
                 height: 60,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(4)),
-                  border: Border.all(color: const Color(0xff000000), width: .1),
+                  border: Border.all(color: const Color(0xFF6347FB), width: 1.5),
                 ),
                 child: FlatButton(
                     child: Text(
@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                 height: 60,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(4)),
-                  border: Border.all(color: const Color(0xff000000), width: .1),
+                  border: Border.all(color: const Color(0xFF6347FB), width: 1.5),
                 ),
                 child: FlatButton(
                   child: Text(

@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 class ButtonNext extends StatelessWidget {
   
   final String texto;
+   final Color colorbg;
+   final Color colottx;
 
   final void Function() onSelect;
 
-  ButtonNext(this.texto, this.onSelect);
+  ButtonNext(this.texto, this.onSelect, this.colorbg, this.colottx);
 
 
 
@@ -19,15 +21,15 @@ class ButtonNext extends StatelessWidget {
           height: 60,
           width: 128 ,
           decoration: BoxDecoration(
-              color: Color(0xFFFFFFFF),
-              borderRadius: BorderRadius.circular(8)),
+              color: colorbg,
+              borderRadius: BorderRadius.circular(5)),
           child: FlatButton(
             child: Text(
               texto,
               style: TextStyle(
                   fontSize: 14,
-                  color: Colors.black87,
-                  fontWeight: FontWeight.w600,
+                  color: colottx,
+                  fontWeight: FontWeight.w500,
                   fontFamily: "Poppins"),
             ),
             onPressed: onSelect,
